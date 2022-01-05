@@ -1,4 +1,5 @@
 import { pastWork } from "../src/data.js"
+import { skills } from "../src/skills.js"
 
 class AboutMe extends React.Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class AboutMe extends React.Component {
             </p>
             <div className="flex justify-center">
               <a href="#contact" className="inline-flex text-white hover:text-thcol-night hover:bg-thcol-lisea border-0 py-2 px-6 focus:outline-none bg-thcol-dasea rounded text-lg">
-                Contact Me
+                Talk With Me
               </a>
               <a href="#past-work" className="ml-4 inline-flex text-white hover:bg-thcol-dasea hover:text-thcol-night border-0 py-2 px-6 focus:outline-none bg-thcol-water rounded text-lg">
                 See My Past Work
@@ -87,10 +88,149 @@ class PastWork extends React.Component {
   }
 }
 
+class Skills extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <section id="skills" className="bg-thcol-dasea text-thcol-ligreen">
+        <div className="container px-5 py-10 mx-auto">
+          <div className="text-center mb-20">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-10 inline-block mb-4" viewBox="0 0 20 20" fill="currentColor">
+              <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+            </svg>
+            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4">
+              Skills and Technologies
+            </h1>
+            <p className="lg:w-3/4 xl:w-1/2 mx-auto leading-relaxed text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div className="flex flex-wrap -m-4">
+            {skills.map((skill) => (
+              <div key={skill} className="p-2 sm:w-1/2 w-full">
+                <div className="bg-thcol-lisea rounded flex p-4 h-full items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="text-white w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M13 7H7v6h6V7z" />
+                    <path fillRule="evenodd" d="M7 2a1 1 0 012 0v1h2V2a1 1 0 112 0v1h2a2 2 0 012 2v2h1a1 1 0 110 2h-1v2h1a1 1 0 110 2h-1v2a2 2 0 01-2 2h-2v1a1 1 0 11-2 0v-1H9v1a1 1 0 11-2 0v-1H5a2 2 0 01-2-2v-2H2a1 1 0 110-2h1V9H2a1 1 0 010-2h1V5a2 2 0 012-2h2V2zM5 5h10v10H5V5z" clipRule="evenodd" />
+                  </svg>
+                  <span className="title-font font-large text-thcol-night">
+                    {skill}
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div> 
+      </section>
+    )
+  }
+}
+
+class Contact extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <section id="contact" className="bg-thcol-ligreen text-thcol-night">
+        <div className="container flex items-center flex-col md:flex-row mx-auto px-10 pt-10">
+          <div className="flex flex-col w-full mb-20 mr-5">
+            <svg xmlns="http://www.w3.org/2000/svg" className="mx-auto inline-block w-10 mb-4" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+            </svg>
+            <h1 className="mx-auto sm:text-4xl text-3xl font-medium title-font mb-4">
+              Contact Me
+            </h1>
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <a href="https://www.linkedin.com/in/jamesdeloye/" className="flex md:justify-start justify-center items-center md:mb-0 mb-10">
+            <img src="../src/linkedin.png" className="w-1/4 pr-5"/>
+            <h1 className="text-xl md:text-3xl "> 
+              <u>
+                LinkedIn 
+              </u>
+            </h1>
+          </a>
+        </div>
+      </section> 
+    )
+  }
+}
+
+
+class Footer extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <section>
+        <div className="bg-thcol-night text-thcol-dasea flex flex-row justify-between w-full">
+           <p className="pl-2">
+	          &copy;
+            James DeLoye 2022
+          </p>
+          <p className="pr-2">
+            Made by James DeLoye with React and Tailwind CSS
+          </p>
+        </div>
+      </section>
+    )
+  }
+}
+
+class Navbar extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <header className="bg-thcol-dasea sticky top-0 z-[100] border-b-2">
+        <div className="flex flex-wrap px-10 p-5 flex-col md:flex-row items-center md:justify-between">
+          <a href="#about" className="title-font font-medium text-white mb-4 md:mb-0 inline-flex items-center md:justify-self-start">
+            <img className="object-scale-down object-center rounded h-24" src="../src/icon.png" alt="personal icon" />
+            <h1 className="ml-3 text-3xl">
+              James DeLoye
+            </h1>
+          </a>
+          <nav className="md:ml-4 md:py-1 md:pl-4 flex flex-wrap text-thcol-night items-center justify-center text-2xl">
+            <a href="#past-work" className="px-10 hover:text-thcol-ligreen">
+              Past Work
+            </a>
+            <a href="#skills" className="md:border-x px-10 hover:text-thcol-ligreen">
+              Skills
+            </a>
+            <a href="#contact" className="px-10 hover:text-thcol-ligreen">
+              Contact
+            </a>
+          </nav>
+        </div>
+      </header>
+    )
+  }
+}
+
 ReactDOM.render(
   <main className="bg-thcol-ligreen">
+    <Navbar />
     <AboutMe />
     <PastWork />
+    <Skills />
+    <Contact />
+    <Footer />
   </main>,
   document.getElementById("root")
 );

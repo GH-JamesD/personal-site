@@ -1,0 +1,1 @@
+export const skills= ["red", "green", "blue", "purple", "black", "orange"];
