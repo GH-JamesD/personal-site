@@ -6,8 +6,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-import { pastWork } from "/src/data.js";
-import { skills } from "/src/skills.js";
+import { pastWork } from "/personal-site/src/data.js";
+import { skills } from "/personal-site/src/skills.js";
 
 var AboutMe = function (_React$Component) {
   _inherits(AboutMe, _React$Component);
@@ -64,7 +64,7 @@ var AboutMe = function (_React$Component) {
           React.createElement(
             "div",
             { className: "lg:max-w-lg lg:w-full md:w-1/2 w-5/6" },
-            React.createElement("img", { className: "object-cover object-center rounded", src: "/src/icon.png", alt: "placeholder" })
+            React.createElement("img", { className: "object-cover object-center rounded", src: "/personal-site/src/icon.png", alt: "placeholder" })
           )
         )
       );
@@ -264,7 +264,7 @@ var Contact = function (_React$Component4) {
           React.createElement(
             "a",
             { href: "https://www.linkedin.com/in/jamesdeloye/", target: "_blank", rel: "noopener noreferrer", className: "flex md:justify-start justify-center items-center md:mb-0 mb-10" },
-            React.createElement("img", { src: "/src/linkedin.png", className: "w-1/4 pr-5" }),
+            React.createElement("img", { src: "/personal-site/src/linkedin.png", className: "w-1/4 pr-5" }),
             React.createElement(
               "h1",
               { className: "text-xl md:text-3xl " },
@@ -340,7 +340,7 @@ var Navbar = function (_React$Component6) {
           React.createElement(
             "a",
             { href: "#about", className: "title-font font-medium text-white mb-4 md:mb-0 inline-flex items-center md:justify-self-start" },
-            React.createElement("img", { className: "object-scale-down object-center rounded h-24", src: "/src/icon.png", alt: "personal icon" }),
+            React.createElement("img", { className: "object-scale-down object-center rounded h-24", src: "/personal-site/src/icon.png", alt: "personal icon" }),
             React.createElement(
               "h1",
               { className: "ml-3 text-3xl" },
