@@ -333,7 +333,7 @@ var Navbar = function (_React$Component6) {
     value: function render() {
       return React.createElement(
         "header",
-        { className: "bg-thcol-dasea sticky top-0 z-[100] border-b-2 border-thcol-night" },
+        { className: "bg-thcol-dasea md:sticky top-0 z-[100] border-b-2 border-thcol-night" },
         React.createElement(
           "div",
           { className: "flex flex-wrap px-10 p-5 flex-col md:flex-row items-center md:justify-between" },

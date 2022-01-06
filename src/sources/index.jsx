@@ -199,7 +199,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <header className="bg-thcol-dasea sticky top-0 z-[100] border-b-2 border-thcol-night">
+      <header className="bg-thcol-dasea md:sticky top-0 z-[100] border-b-2 border-thcol-night">
         <div className="flex flex-wrap px-10 p-5 flex-col md:flex-row items-center md:justify-between">
           <a href="#about" className="title-font font-medium text-white mb-4 md:mb-0 inline-flex items-center md:justify-self-start">
             <img className="object-scale-down object-center rounded h-24" src="/personal-site/src/icon.png" alt="personal icon" />
