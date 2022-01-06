@@ -1,5 +1,5 @@
-import { pastWork } from "/personal-site/src/data.js"
-import { skills } from "/personal-site/src/skills.js"
+import { pastWork } from "/src/data.js"
+import { skills } from "/src/skills.js"
 
 class AboutMe extends React.Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class AboutMe extends React.Component {
             </div>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img className="object-cover object-center rounded" src="/personal-site/src/icon.png" alt="placeholder">
+            <img className="object-cover object-center rounded" src="/src/icon.png" alt="placeholder">
             </img>
           </div>
         </div>
@@ -156,7 +156,7 @@ class Contact extends React.Component {
             </p>
           </div>
           <a href="https://www.linkedin.com/in/jamesdeloye/" target="_blank" rel="noopener noreferrer" className="flex md:justify-start justify-center items-center md:mb-0 mb-10">
-            <img src="/personal-site/src/linkedin.png" className="w-1/4 pr-5"/>
+            <img src="/src/linkedin.png" className="w-1/4 pr-5"/>
             <h1 className="text-xl md:text-3xl "> 
               <u>
                 LinkedIn 
@@ -202,7 +202,7 @@ class Navbar extends React.Component {
       <header className="bg-thcol-dasea md:sticky top-0 z-[100] border-b-2 border-thcol-night">
         <div className="flex flex-wrap px-10 p-5 flex-col md:flex-row items-center md:justify-between">
           <a href="#about" className="title-font font-medium text-white mb-4 md:mb-0 inline-flex items-center md:justify-self-start">
-            <img className="object-scale-down object-center rounded h-24" src="/personal-site/src/icon.png" alt="personal icon" />
+            <img className="object-scale-down object-center rounded h-24" src="/src/icon.png" alt="personal icon" />
             <h1 className="ml-3 text-3xl">
               James DeLoye
             </h1>
