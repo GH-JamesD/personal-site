@@ -14,16 +14,17 @@ class AboutMe extends React.Component {
             <h1 className="sm:text-4xl text-3xl mb-4 font-medium text-thcol-night">
               Hi, I'm James!
               <br className="hidden lg:inline-block" />
-              <span className="sm:text-2xl text-xl"> A chem bio-turned-computer science student at UC Berkeley </span> 
+              <span className="sm:text-2xl text-xl text-thcol-water"> A chem bio-turned-computer science student at UC Berkeley </span> 
             </h1>
             <p className="mb-8 leading-relaxed text-thcol-night">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              With a background in biochemistry and biomedical research, I started at Berkeley as a chemical biology major in fall 2020.
+              After taking my first computer science class in spring 2021, I fell in love with the discipline and switched my major by fall. 
+              Currently I am interested in the interdisciplinary applications of computer science and software engineering, particularly to solve problems related to 
+              human health, drug disovery and development. In my freetime I enjoy cooking, baking, hiking, and building PC computers.
             </p>
             <div className="flex justify-center">
               <a href="#contact" className="inline-flex text-white hover:text-thcol-night hover:bg-thcol-lisea border-0 py-2 px-6 focus:outline-none bg-thcol-dasea rounded text-lg">
-                Talk With Me
+                Connect With Me
               </a>
               <a href="#past-work" className="ml-4 inline-flex text-white hover:bg-thcol-dasea hover:text-thcol-night border-0 py-2 px-6 focus:outline-none bg-thcol-water rounded text-lg">
                 See My Past Work
@@ -57,9 +58,9 @@ class PastWork extends React.Component {
               My Past Work
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Below is a compilation of work that I've done in the past, personally, for internships, and for school. 
+              They span my time doing computer science as well as my time doing biochem, and everything in-between. 
+              Mouse over each image below to see more information about the project and click for a link to the product, if available.
             </p>
           </div>
           <div className="flex flex-wrap -m-4">
@@ -105,9 +106,9 @@ class Skills extends React.Component {
               Skills and Technologies
             </h1>
             <p className="lg:w-3/4 xl:w-1/2 mx-auto leading-relaxed text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Here are various skills, languages, and technologies that I've studied both independently and in my time at Berkeley. 
+              The items below are strictly computer science related. To see skills I gained while studying chemical biology, 
+              please see past papers from the section above or click on my LinkedIn below.
             </p>
           </div>
           <div className="flex flex-wrap -m-4">
@@ -148,13 +149,13 @@ class Contact extends React.Component {
             <h1 className="mx-auto sm:text-4xl text-3xl font-medium title-font mb-4">
               Contact Me
             </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-center">
+              The best way to reach me is to direct message me on LinkedIn. 
+              I'm happy to discuss anything related to my past work, skills, or employment.
+              The icon will take you to my personal page.
             </p>
           </div>
-          <a href="https://www.linkedin.com/in/jamesdeloye/" className="flex md:justify-start justify-center items-center md:mb-0 mb-10">
+          <a href="https://www.linkedin.com/in/jamesdeloye/" target="_blank" rel="noopener noreferrer" className="flex md:justify-start justify-center items-center md:mb-0 mb-10">
             <img src="../src/linkedin.png" className="w-1/4 pr-5"/>
             <h1 className="text-xl md:text-3xl "> 
               <u>
@@ -198,7 +199,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <header className="bg-thcol-dasea sticky top-0 z-[100] border-b-2">
+      <header className="bg-thcol-dasea sticky top-0 z-[100] border-b-2 border-thcol-night">
         <div className="flex flex-wrap px-10 p-5 flex-col md:flex-row items-center md:justify-between">
           <a href="#about" className="title-font font-medium text-white mb-4 md:mb-0 inline-flex items-center md:justify-self-start">
             <img className="object-scale-down object-center rounded h-24" src="../src/icon.png" alt="personal icon" />

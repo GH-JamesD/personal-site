@@ -37,14 +37,14 @@ var AboutMe = function (_React$Component) {
               React.createElement("br", { className: "hidden lg:inline-block" }),
               React.createElement(
                 "span",
-                { className: "sm:text-2xl text-xl" },
+                { className: "sm:text-2xl text-xl text-thcol-water" },
                 " A chem bio-turned-computer science student at UC Berkeley "
               )
             ),
             React.createElement(
               "p",
               { className: "mb-8 leading-relaxed text-thcol-night" },
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "With a background in biochemistry and biomedical research, I started at Berkeley as a chemical biology major in fall 2020. After taking my first computer science class in spring 2021, I fell in love with the discipline and switched my major by fall. Currently I am interested in the interdisciplinary applications of computer science and software engineering, particularly to solve problems related to human health, drug disovery and development. In my freetime I enjoy cooking, baking, hiking, and building PC computers."
             ),
             React.createElement(
               "div",
@@ -52,7 +52,7 @@ var AboutMe = function (_React$Component) {
               React.createElement(
                 "a",
                 { href: "#contact", className: "inline-flex text-white hover:text-thcol-night hover:bg-thcol-lisea border-0 py-2 px-6 focus:outline-none bg-thcol-dasea rounded text-lg" },
-                "Talk With Me"
+                "Connect With Me"
               ),
               React.createElement(
                 "a",
@@ -108,7 +108,7 @@ var PastWork = function (_React$Component2) {
             React.createElement(
               "p",
               { className: "lg:w-2/3 mx-auto leading-relaxed text-base" },
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Below is a compilation of work that I've done in the past, personally, for internships, and for school. They span my time doing computer science as well as my time doing biochem, and everything in-between. Mouse over each image below to see more information about the project and click for a link to the product, if available."
             )
           ),
           React.createElement(
@@ -187,7 +187,7 @@ var Skills = function (_React$Component3) {
             React.createElement(
               "p",
               { className: "lg:w-3/4 xl:w-1/2 mx-auto leading-relaxed text-base" },
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              "Here are various skills, languages, and technologies that I've studied both independently and in my time at Berkeley. The items below are strictly computer science related. To see skills I gained while studying chemical biology, please see past papers from the section above or click on my LinkedIn below."
             )
           ),
           React.createElement(
@@ -257,13 +257,13 @@ var Contact = function (_React$Component4) {
             ),
             React.createElement(
               "p",
-              { className: "lg:w-2/3 mx-auto leading-relaxed text-base" },
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              { className: "lg:w-2/3 mx-auto leading-relaxed text-base text-center" },
+              "The best way to reach me is to direct message me on LinkedIn. I'm happy to discuss anything related to my past work, skills, or employment. The icon will take you to my personal page."
             )
           ),
           React.createElement(
             "a",
-            { href: "https://www.linkedin.com/in/jamesdeloye/", className: "flex md:justify-start justify-center items-center md:mb-0 mb-10" },
+            { href: "https://www.linkedin.com/in/jamesdeloye/", target: "_blank", rel: "noopener noreferrer", className: "flex md:justify-start justify-center items-center md:mb-0 mb-10" },
             React.createElement("img", { src: "../src/linkedin.png", className: "w-1/4 pr-5" }),
             React.createElement(
               "h1",
@@ -333,7 +333,7 @@ var Navbar = function (_React$Component6) {
     value: function render() {
       return React.createElement(
         "header",
-        { className: "bg-thcol-dasea sticky top-0 z-[100] border-b-2" },
+        { className: "bg-thcol-dasea sticky top-0 z-[100] border-b-2 border-thcol-night" },
         React.createElement(
           "div",
           { className: "flex flex-wrap px-10 p-5 flex-col md:flex-row items-center md:justify-between" },

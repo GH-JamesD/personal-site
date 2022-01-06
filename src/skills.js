@@ -1,1 +1,1 @@
-export const skills= ["red", "green", "blue", "purple", "black", "orange"];
+export const skills= ["Python", "Java", "JavaScript", "Perl", "HTML", "CSS", "PostScript", "Git/GitHub", "Linux/Ubuntu", "React", "Tailwind CSS", "Node.js"];
