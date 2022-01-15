@@ -44,7 +44,7 @@ var AboutMe = function (_React$Component) {
             React.createElement(
               "p",
               { className: "mb-8 leading-relaxed text-thcol-night" },
-              "With a background in biochemistry and biomedical research, I started at Berkeley as a chemical biology major in fall 2020. After taking my first computer science class in spring 2021, I fell in love with the discipline and switched my major by fall. Currently I am interested in the interdisciplinary applications of computer science and software engineering, particularly to solve problems related to human health, drug disovery and development. In my freetime I enjoy cooking, baking, hiking, and building PC computers."
+              "With a background in biochemistry and biomedical research, I started at Berkeley as a chemical biology major in fall 2020. After taking my first computer science class in spring 2021, I fell in love with the discipline and switched my major by fall. Currently I am interested in the interdisciplinary applications of computer science and software engineering, particularly to solve problems related to human health and drug disovery/development. In my freetime I enjoy cooking, baking, hiking, and building PC computers."
             ),
             React.createElement(
               "div",
