@@ -1,1 +1,0 @@
-export const skills= ["Python", "Java", "JavaScript", "Perl", "HTML", "CSS", "PostScript", "Git/GitHub", "Linux/Ubuntu", "React", "Tailwind CSS", "Node.js"];
